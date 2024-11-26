@@ -10,12 +10,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-
     <header class="bg-dark py-3">
         <div class="container">
-            <h1>
-                <img class="text-center1" src="../img/logo.webp" alt="logo">
-            </h1>
+            <a class="nav-link active" href="../index.html"><img class="text-center1" src="../img/logo.webp" alt="logo"></a>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -23,7 +20,6 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav ms-auto">
-                            <li class="nav-item"><a class="nav-link" href="../index.html">Inicio</a></li>
                             <li class="nav-item"><a class="nav-link" href="personajes.html">Personajes</a></li>
                             <li class="nav-item"><a class="nav-link" href="acerca-del-anime.html">Acerca del Anime</a></li>
                             <li class="nav-item"><a class="nav-link" href="curiosidades.html">Curiosidades</a></li>
@@ -34,6 +30,7 @@
             </nav>
         </div>
     </header>
+
 
     <section class="texto-acerca mt-5 ">
         <h2 class="text-center">Episodios</h2>
@@ -100,8 +97,8 @@
 
         <section class="right-section">
             <div class="content-card bg-dark">
-                <img src="../img/episodios/JJK0.webp" alt="Jujutsu Kaisen 0">
-                <h3>Película: Jujutsu Kaisen 0</h3>
+                <img src="../img/episodios/JJK0.webp" alt="Jujutsu Kaisen 0" id="pelicula">
+                <h3>Película: Jujutsu Kaisen 0</h3> 
                 <p>Yuta Okkotsu perdió a su amiga de la infancia, Rika Orimoto, en un accidente automovilístico cuando era una niña. En una promesa que hicieron, aseguraron que se casarían cuando sean mayores.
 
                 Rika regresa y lo asecha como un espíritu maldito vengativo. Deseando morir, Satoru Gojo le da la bienvenida al Colegio Técnico de Magia Metropolitana de Tokio donde conoce a su compañeros Maki Zenin, Toge Inumaki y Panda.
@@ -111,7 +108,7 @@
                 Mientras tanto, el usuario maldito, Suguru Geto, quien persigue el sueño de crear un mundo únicamente con chamanes, aparece en el colegio de jujutsu y anuncia que el próximo 24 de diciembre daría inicio al Desfile Nocturno de los Cien Demonios.</p>
             </div>
 
-            <!-- Manga -->
+            
             <div class="content-card bg-dark">
                 <img src="../img/episodios/manga.webp" alt="Manga de Jujutsu Kaisen">
                 <h3>Manga: Jujutsu Kaisen</h3>
@@ -130,5 +127,6 @@
     </footer>
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    
 </body>
 </html>
