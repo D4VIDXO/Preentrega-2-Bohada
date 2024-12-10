@@ -1,568 +1,566 @@
-/* Index */
+@charset "UTF-8";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 body {
-    font-family: 'Roboto', sans-serif; 
-    color: #333;
-    margin: 0;
-    padding: 0;
-    background-color: #000000;
-    
+  font-family: "Roboto", sans-serif;
+  color: #333;
+  margin: 0;
+  padding: 0;
+  background-color: #000000;
 }
 
-
-h1, h2, h3, h4, p{
-    margin: 0;
-    padding: 0;
-    color: #fff;
+h1 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
 }
 
+h2 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  font-size: 2.5rem;
+  color: #dc0e0e;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+h3 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+h4 {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+p {
+  margin: 0;
+  padding: 0;
+  color: #fff;
+}
+
+p strong {
+  color: #b00808;
+  font-weight: bold;
+}
 
 header {
-    background-color: #292121;
-    color: #ffffff;
-    padding: 1rem 0;
+  background-color: #292121;
+  color: #ffffff;
+  padding: 1rem 0;
 }
 
 header h1 {
-    font-size: 2.5rem;
-    text-align: center;
-    font-weight: bold;
-    letter-spacing: 1px;
+  font-size: 2.5rem;
+  text-align: center;
+  font-weight: bold;
+  letter-spacing: 1px;
 }
 
-.text-center1{
-    display: block;
-    margin: 0 auto 1rem;
-    width: 40%;
-
-    
+.text-center1 {
+  display: block;
+  margin: 0 auto 1rem;
+  width: 40%;
 }
 
 .navbar {
-    background-color: transparent;
-    border: none;
+  background-color: transparent;
+  border: none;
 }
 
 .navbar-nav .nav-link {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin: 1rem 1rem 1rem;
-    margin-right: 8.5rem;
-    transition: color 0.4s ease-in-out;
-
+  font-size: 1.5rem;
+  color: #ffffff;
+  margin: 1rem 1rem 1rem;
+  margin-right: 8.5rem;
+  transition: color 0.4s ease-in-out;
 }
 
-.navbar-nav .nav-link:hover, 
+.navbar-nav .nav-link:hover {
+  color: #b00808 !important;
+  font-weight: bolder;
+}
+
 .navbar-nav .nav-link.active {
-        color: #b00808 !important;
-        font-weight: bolder;
+  color: #b00808 !important;
+  font-weight: bolder;
 }
 
 /* Carrusel */
 .banner-carousel .carousel-item img {
-    object-fit: cover;
-    width: 100%;
-    height: 60vh;
-    background-color: #212529;
-    box-shadow: 0 4px 10px rgba(15, 14, 14, 0.5);
+  object-fit: cover;
+  width: 100%;
+  height: 60vh;
+  background-color: #212529;
+  box-shadow: 0 4px 10px rgba(15, 14, 14, 0.5);
 }
 
-.carousel-slide{
-    background-color: #ffffff;
-    width: 10px;
-    height: 10px;
-    border-radius: 50%;
+.carousel-slide {
+  background-color: #ffffff;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
 }
 
-.carousel-control-prev-icon,
+.carousel-control-prev-icon {
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
+}
+
 .carousel-control-next-icon {
-    background-color: black;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    outline: 2px solid #ffffff;
-    outline-offset: 2px;
+  background-color: black;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  outline: 2px solid #ffffff;
+  outline-offset: 2px;
 }
 
 /* Sección de Grilla */
-
 .anime-grid {
-    display: flex; 
-    flex-wrap: wrap; 
-    justify-content: center; 
-    gap: 2.5rem; 
-    margin-top: 3rem;
-    box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2.5rem;
+  margin-top: 3rem;
+  box-sizing: border-box;
 }
 
 .anime-grid .grid-card {
-    background: #ffffff;
-    padding: 1.5rem;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    transition: transform 0.4s ease, box-shadow 0.4s ease;
-    flex: 1 1 calc(30% - 2rem); 
-    max-width: 300px; 
-    text-align: center;
-    box-sizing: border-box;
+  background: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.4s ease, box-shadow 0.4s ease;
+  flex: 1 1 calc(30% - 2rem);
+  max-width: 300px;
+  text-align: center;
+  box-sizing: border-box;
 }
 
 .anime-grid .grid-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #2b0808, #830505);
-    box-sizing: border-box;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #2b0808, #830505);
+  box-sizing: border-box;
 }
 
 .anime-grid .grid-card h3 {
-    font-size: 1.8rem;
-    color: #dc0e0e;
-    margin-bottom: 1rem;
-    box-sizing: border-box;
+  font-size: 1.8rem;
+  color: #dc0e0e;
+  margin-bottom: 1rem;
+  box-sizing: border-box;
 }
 
 .anime-grid .grid-card p {
-    font-size: 1rem;
-    color: #ffffff;
-    max-height: 4rem;
-    box-sizing: border-box;
+  font-size: 1rem;
+  color: #ffffff;
+  max-height: 4rem;
+  box-sizing: border-box;
 }
 
-
-a {
-    color: inherit;
-    text-decoration: none;
-}
-
-main div img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-main .img-dos, .img-cinco{
-    display: none;
-}
-
-footer{
-    color: white;
-    text-align: center;
-    margin-top: 2rem;
-}
-
-  
 /* Acerca del anime*/
-
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-
+a {
+  color: inherit;
+  text-decoration: none;
 }
 
-
-.grid-2{
-    height: 70vh;
-    display: grid;
-    grid-template-columns:1fr;
-    grid-template-rows: repeat(3, 30%);
-    padding: 1.5rem;
-    row-gap: 1rem;
-    align-content: center;
+main div img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+main .img-dos {
+  display: none;
 }
 
+.img-cinco {
+  display: none;
+}
+
+footer {
+  color: white;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.grid-2 {
+  height: 70vh;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 30%);
+  padding: 1.5rem;
+  row-gap: 1rem;
+  align-content: center;
+}
 
 .texto-acerca {
-    color: #ffffff;
-    padding: 2.5rem;
-    border-radius: 10px;
-    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
-    line-height: 1.8;
-    margin-top: 3rem;
+  color: #ffffff;
+  padding: 2.5rem;
+  border-radius: 10px;
+  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5);
+  line-height: 1.8;
+  margin-top: 3rem;
 }
-
-h2 {
-    font-size: 2.5rem;
-    color: #dc0e0e;
-    margin-bottom: 1.5rem;
-    font-weight: bold;
-    text-transform: uppercase;
-    text-align: center;
-}
-
 .texto-acerca .texto-contenido p {
-    font-size: 1.2rem;
-    margin-bottom: 1.5rem;
-    text-align: justify;
-}
-
-p strong {
-    color: #b00808;
-    font-weight: bold;
+  font-size: 1.2rem;
+  margin-bottom: 1.5rem;
+  text-align: justify;
 }
 
 /* Personajes */
-
-.container1{
-    display: flex;
-    flex-direction: row;
-    gap: 2rem;
-    padding: 2rem;
+.container1 {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  padding: 2rem;
 }
 
-.personajes-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 2rem;
-    margin: 2rem auto;
-    padding: 1rem;
-    max-width: 1200px;
+.personaje-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  margin: 2rem auto;
+  padding: 1rem;
+  max-width: 1200px;
 }
 
 .personaje-card {
-    background-color: #1c1c1c;
-    color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-    flex: 1 1 calc(25% - 2rem); 
-    max-width: 300px; 
-    text-align: center;
+  background-color: #1c1c1c;
+  color: #ffffff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  flex: 1 1 calc(25% - 2rem);
+  max-width: 300px;
+  text-align: center;
 }
-
 .personaje-card:hover {
-    transform: translateY(-10px) scale(1.05);
-    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
-    background: linear-gradient(135deg, #2b0808, #830505);
-    box-sizing: border-box;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  background: linear-gradient(135deg, #2b0808, #830505);
+  box-sizing: border-box;
 }
-
 .personaje-card img {
-    width: 100%;
-    height: 200px;
-    object-fit: cover;
-    border-bottom: 3px solid #b00808;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-bottom: 3px solid #b00808;
 }
-
 .personaje-card h3 {
-    font-size: 1.8rem;
-    margin: 1rem 0 0.5rem;
-    color: #dc0e0e;
+  font-size: 1.8rem;
+  margin: 1rem 0 0.5rem;
+  color: #dc0e0e;
 }
-
 .personaje-card p {
-    font-size: 1rem;
-    padding: 0 1rem 1rem;
+  font-size: 1rem;
+  padding: 0 1rem 1rem;
 }
 
 /* Episodios */
-
 .left-section {
-    flex: 3;
+  flex: 3;
 }
 
 .right-section {
-    flex: 2;
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.right-section .content-card {
+  background-color: #1f1f1f;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border: 4px solid #b00808;
 }
 
 .episodio-card {
-    display: flex;
-    align-items: flex-start;
-    background-color: #000000;
-    border-radius: 10px;
-    overflow: hidden;
-    margin-bottom: 2rem;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    position: relative;
-    padding: 1rem;
-    gap: 1rem;
+  display: flex;
+  align-items: flex-start;
+  background-color: #000000;
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 2rem;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  position: relative;
+  padding: 1rem;
+  gap: 1rem;
 }
-
 .episodio-card img {
-    width: 45%;
-    height: 25rem;
-    border-radius: 10px;
-    object-fit: cover;
-    border: 4px solid #b00808;
+  width: 45%;
+  height: 25rem;
+  border-radius: 10px;
+  object-fit: cover;
+  border: 4px solid #b00808;
 }
-
 .episodio-card h3 {
-    font-size: 1.2rem;
-    color: #dc0e0e;
-    margin-bottom: 0.5rem;
+  font-size: 1.2rem;
+  color: #dc0e0e;
+  margin-bottom: 0.5rem;
 }
-
 .episodio-card p {
-    font-size: 0.9rem;
-    color: #eaeaea;
-    text-align: justify;
-}
-
-/* Secciones derecha */
-.right-section .content-card {
-    background-color: #1f1f1f;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 1rem;
-    border: 4px solid #b00808;
+  font-size: 0.9rem;
+  color: #eaeaea;
+  text-align: justify;
 }
 
 .content-card img {
-    width: 100%;
-    height: 35rem;
-    border-radius: 20px;
-    margin-bottom: 2rem;
+  width: 100%;
+  height: 35rem;
+  border-radius: 20px;
+  margin-bottom: 2rem;
 }
-
 .content-card h3 {
-    font-size: 1.5rem;
-    color: #dc0e0e;
-    margin-bottom: 1rem;
+  font-size: 1.5rem;
+  color: #dc0e0e;
+  margin-bottom: 1rem;
 }
-
 .content-card p {
-    font-size: 1rem;
-    color: #eaeaea;
-    text-align: justify;
+  font-size: 1rem;
+  color: #eaeaea;
+  text-align: justify;
 }
 
 /* Curiosidades */
-
 .curiosidades-container {
-    padding: 2rem;
-    background-color: #000000;
-    max-width: 1200px;
-    margin: auto;
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
+  padding: 2rem;
+  background-color: #000000;
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
 }
-
 
 .curiosidades-layout {
-    display: grid;
-    grid-template-columns: 1fr 1fr; 
-    column-gap: 2rem;
-    align-items: flex-start;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  column-gap: 2rem;
+  align-items: flex-start;
 }
 
-
 .curiosidades {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.curiosidades h2 {
+  font-size: 2rem;
+  color: #dc0e0e;
+  margin-bottom: 1rem;
+}
+.curiosidades p {
+  color: #eaeaea;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
+}
+.curiosidades li {
+  color: #eaeaea;
+  line-height: 1.6;
+  font-size: 1.1rem;
+  text-align: justify;
 }
 
 .curiosidad {
-    background-color: #000000;
-    border-radius: 10px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    padding: 1.5rem;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  background-color: #000000;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  padding: 1.5rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-
 .curiosidad:hover {
-    transform: scale(1.03);
-    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
+  transform: scale(1.03);
+  box-shadow: 0 8px 15px rgba(0, 0, 0, 0.7);
 }
-
-.curiosidades h2 {
-    font-size: 2rem;
-    color: #dc0e0e;
-    margin-bottom: 1rem;
-}
-
-.curiosidades p, .curiosidades li {
-    color: #eaeaea;
-    line-height: 1.6;
-    font-size: 1.1rem;
-    text-align: justify;
-}
-
-
-
-/* Responsividad */
-
-@media (max-width: 900px) { 
-    .text-center1 {
-        width: 70%;
-        height: auto;
-        margin: 0 5rem 2rem;
-    }
-}
-
-/* Index */
-@media (max-width: 768px) {
-    .anime-grid .grid-card, 
-    .personaje-card{
-        flex: 1 1 calc(45% - 1rem); 
-    }
-}
-
-@media (max-width: 576px) {
-    .anime-grid .grid-card,
-    .personaje-card {
-        flex: 1 1 100%; 
-        margin: 0.5rem 0;
-    }
-}
-
-/* Acerca del anime */
-@media screen and (min-width: 1024px) {
-    .grid-2 {
-        grid-template-columns: repeat(3, 1fr);
-        grid-template-rows: auto auto;
-        gap: 1rem;
-    }
-}
-
-@media screen and (max-width:600px){
-    header{
-        justify-content: space-between;
-        padding-right: 40px;
-    }
-
-    main{
-        grid-template-columns: repeat(2,1fr);
-        grid-template-rows: repeat(2, 40%);
-        column-gap: 0.5rem;
-    }
-
-    main .img-cuatro{
-        grid-column: span 1;
-        
-    }
-}
-
-@media screen and (min-width:1024px){
-    .grid-2 .img-dos, .img-cinco{
-        display: block;
-    }
-    .grid-2{
-    grid-template-columns:repeat(3, 1fr) ;
-    grid-template-rows:30% 30% 35% ;
-    column-gap: 1rem;
-    }
-
-    .grid-2 .img-uno, main .img-tres{
-        grid-row: span 2 ;
-    }
-
-    .grid-2 .img-dos, main .img-cuatro{
-        grid-column: span 1 ;
-    }
-
-    .grid-2 .img-cinco{
-        grid-column: span 3;
-    }
-}
-
-/* Personajes */
-
-@media (max-width: 900px), (max-width: 768px) {
-    .personaje-card {
-        flex: 1 1 calc(45% - 1rem); 
-    }
-}
-
-
-@media (max-width: 576px) {
-    .personaje-card {
-        flex: 1 1 100%; 
-    }
-}
-
-/* Episodios */
 
 main.container1 {
-    display: flex;
-    gap: 2rem;
-    flex-wrap: wrap; 
-    justify-content: center;
+  display: flex;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
 
+/* Responsividad */
+/* Index */
+@media (max-width: 900px) {
+  .text-center1 {
+    width: 70%;
+    height: auto;
+    margin: 0 5rem 2rem;
+  }
+  .personaje-card {
+    flex: 1 1 calc(45% - 1rem);
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto auto;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 600px) {
+  header {
+    justify-content: space-between;
+    padding-right: 40px;
+  }
+  main {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 40%);
+    column-gap: 0.5rem;
+  }
+  main .img-cuatro {
+    grid-column: span 1;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .grid-2 {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 30% 30% 30%;
+    column-gap: 1rem;
+  }
+  .grid-2 .img-dos {
+    display: block;
+    grid-column: span 1;
+  }
+  .grid-2 .img-uno {
+    grid-row: span 2;
+  }
+  .grid-2 .img-cinco {
+    grid-column: span 3;
+  }
+  .img-cinco {
+    display: block;
+  }
+  main .img-tres {
+    grid-row: span 2;
+  }
+  main .img-cuatro {
+    grid-column: span 1;
+  }
+}
 @media (max-width: 1024px) {
-    .left-section, .right-section {
-        flex: 1 1 100%; 
-    }
+  .curiosidades-layout {
+    grid-template-columns: 1fr;
+  }
+  .curiosidades {
+    margin: 0 auto;
+    max-width: 90%;
+  }
+  .galeria {
+    margin: 0 auto;
+    max-width: 90%;
+  }
 }
-}
-
 @media (max-width: 768px) {
-    .episodio-card {
-        flex-direction: column; 
-        text-align: center; 
-    }
-
-    .episodio-card img {
-        width: 100%; 
-    }
-
-    .right-section {
-        gap: 1rem; 
-    }
-
-    .content-card img {
-        height: auto; 
-    }
-
-    .episodio-card h3,
-    .content-card h3 {
-        font-size: 1.2rem; 
-    }
-
-    .episodio-card p,
-    .content-card p {
-        font-size: 0.9rem; 
-    }
+  .anime-grid .grid-card {
+    flex: 1 1 calc(45% - 1rem);
+  }
+  .personaje-card {
+    flex: 1 1 calc(45% - 1rem);
+    flex: 1 1 calc(45% - 1rem);
+  }
+  .episodio-card {
+    flex-direction: column;
+    text-align: center;
+  }
+  .episodio-card img {
+    width: 100%;
+  }
+  .episodio-card h3 {
+    font-size: 1.2rem;
+  }
+  .episodio-card p {
+    font-size: 0.9rem;
+  }
+  .right-section {
+    gap: 1rem;
+  }
+  .content-card img {
+    height: auto;
+  }
+  .content-card h3 {
+    font-size: 1.2rem;
+  }
+  .content-card p {
+    font-size: 0.9rem;
+  }
+  /* Curiosidades */
+  .galeria {
+    grid-template-columns: 1fr;
+  }
+  .curiosidades h2 {
+    font-size: 1.8rem;
+  }
+  .curiosidades p {
+    font-size: 1rem;
+  }
+  .curiosidades li {
+    font-size: 1rem;
+  }
 }
-
+/* Episodios */
+@media (max-width: 1024px) {
+  .left-section, .right-section {
+    flex: 1 1 100%;
+  }
+}
 @media (max-width: 576px) {
-    .episodio-card img,
-    .content-card img {
-        border-radius: 10px; 
-        width: 18rem;
-    }
-
-    .episodio-card h3,
-    .content-card h3 {
-        font-size: 1.1rem; 
-    }
-
-    .episodio-card p,
-    .content-card p {
-        font-size: 0.8rem; 
-    }
+  .anime-grid .grid-card {
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
+  }
+  .personaje-card {
+    flex: 1 1 100%;
+    margin: 0.5rem 0;
+    flex: 1 1 100%;
+  }
+  .episodio-card img {
+    border-radius: 10px;
+    width: 18rem;
+  }
+  .episodio-card h3 {
+    font-size: 1.1rem;
+  }
+  .episodio-card p {
+    font-size: 0.8rem;
+  }
+  .content-card img {
+    border-radius: 10px;
+    width: 18rem;
+  }
+  .content-card h3 {
+    font-size: 1.1rem;
+  }
+  .content-card p {
+    font-size: 0.8rem;
+  }
 }
 
-/* Curiosidades */
-
-@media (max-width: 1024px) {
-    .curiosidades-layout {
-        grid-template-columns: 1fr; 
-    }
-
-    .curiosidades, .galeria {
-        margin: 0 auto;
-        max-width: 90%;
-    }
-}
-
-@media (max-width: 768px) {
-    .galeria {
-        grid-template-columns: 1fr;
-    }
-
-    .curiosidades h2 {
-        font-size: 1.8rem;
-    }
-
-    .curiosidades p, .curiosidades li {
-        font-size: 1rem;
-    }
-}
+/*# sourceMappingURL=estilos.css.map */
